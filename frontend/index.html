@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MAS AI Student System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="hero card">
+        <p class="eyebrow">KSU24 • Дискретна математика Андерсона</p>
+        <h1>Перевірка сесії та допомога ШІ</h1>
+        <p class="subtitle">Зелені питання — правильні. Червоні — з помилкою та персоналізованою допомогою від AI.</p>
+        <div class="stats">
+          <span>Усього: <strong id="totalCount">0</strong></span>
+          <span>Правильних: <strong id="correctCount">0</strong></span>
+          <span>Помилок: <strong id="wrongCount">0</strong></span>
+          <button id="refreshBtn" class="ghost" type="button">Оновити сесію</button>
+        </div>
+      </header>
+
+      <section class="layout">
+        <article class="card list-panel">
+          <h2>Список питань</h2>
+          <div id="questionList" class="question-list"></div>
+        </article>
+
+        <article class="card details-panel">
+          <h2>Деталі питання</h2>
+          <p class="hint" id="detailHint">Оберіть питання зі списку ліворуч.</p>
+
+          <div id="errorSection" class="major-section">
+            <h3>Блок помилки</h3>
+            <div class="detail-grid">
+              <div>
+                <p class="label">Питання</p>
+                <p id="detailQuestion" class="value">—</p>
+              </div>
+              <div>
+                <p class="label">Тема</p>
+                <p id="detailTopic" class="value">—</p>
+              </div>
+              <div>
+                <p class="label">Відповідь студента</p>
+                <p id="detailStudent" class="value">—</p>
+              </div>
+              <div>
+                <p class="label">Правильна відповідь</p>
+                <p id="detailCorrect" class="value strong">—</p>
+              </div>
+            </div>
+          </div>
+
+          <div id="explanationSection" class="major-section">
+            <h3>Пояснення від AI</h3>
+            <p id="detailExplanation" class="explanation">—</p>
+
+            <p class="label">Контекст</p>
+            <p id="detailContext" class="context">—</p>
+          </div>
+
+          <div id="promptSection" class="major-section">
+            <h3>Prompt</h3>
+            <div class="actions">
+              <button id="copyBtn" class="accent" type="button" disabled>Скопіювати запит</button>
+              <button id="openNotebookBtn" class="cta" type="button" disabled>Перейти до NotebookLM</button>
+              <span id="copyOk" class="copy-ok" hidden>Скопійовано! ✅</span>
+            </div>
+
+            <pre id="detailPrompt" class="prompt-box">—</pre>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>

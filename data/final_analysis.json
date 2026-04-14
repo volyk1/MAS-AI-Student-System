@@ -1,0 +1,345 @@
+[
+  {
+    "question_id": "Q-004",
+    "question": "При спрощенні виразів за допомогою карти Карно, об'єднання чотирьох сусідніх клітин дозволяє виключити зі складової кон'юнкції:",
+    "topic": "Логіка",
+    "student_answer": "B",
+    "correct_answer": "C",
+    "student_answer_text": "Одну змінну",
+    "correct_answer_text": "Дві змінні",
+    "comment": "",
+    "is_correct": false,
+    "analyst": {
+      "role": "Analyst",
+      "language": "uk",
+      "ai_explanation": "Аналітик (українською): помилка у темі 'Логіка'. Студент обрав 'Одну змінну', тоді як правильна відповідь: 'Дві змінні'. Рекомендується повторити визначення і виконати міні-перевірку на аналогічному прикладі."
+    },
+    "architect": {
+      "role": "Architect",
+      "language": "uk",
+      "custom_prompt": "Привіт! Я вивчаю дискретну математику за Андерсоном і хочу розібрати свою помилку.\n\nПитання: При спрощенні виразів за допомогою карти Карно, об'єднання чотирьох сусідніх клітин дозволяє виключити зі складової кон'юнкції:\nМоя відповідь: Одну змінну\nПравильна відповідь: Дві змінні\n\nПоясни, будь ласка, простими словами, у чому моя помилка і як мислити правильно. Потім дай 2 короткі запитання для самоперевірки та 3 вправи: легка, середня, складна."
+    },
+    "routing": {
+      "notebook_url": "https://notebooklm.google.com/notebook/1652e15b-2235-4a56-b934-60a4a0c77396",
+      "section": "Таблиці істинності, імплікація, закони де Моргана, ДНФ, тавтології",
+      "keywords": [
+        "таблиці істинності",
+        "імплікація",
+        "де моргана",
+        "днф",
+        "карти карно",
+        "логіка",
+        "тавтологія",
+        "карта карно",
+        "дднф",
+        "істинність"
+      ]
+    },
+    "grader": {
+      "correct": false,
+      "score": 0.571,
+      "diff": [
+        "- Одну змінну",
+        "+ Дві змінні"
+      ],
+      "summary": "Відповідь помилкова — спостерігається невірне розуміння або пропуск ключових моментів."
+    },
+    "feedback": {
+      "explanation": "Аналіз показує: Відповідь помилкова — спостерігається невірне розуміння або пропуск ключових моментів.\nІмовірний тип помилки: невірне розуміння ключових понять.\nДетально: порівняння відповіді студента і правильної відповіді (diff) нижче.\nDiff:\n- Одну змінну\n+ Дві змінні",
+      "recommendations": [
+        "Уточнити визначення ключових термінів у питанні.",
+        "Розбити задачу на кроки і перевірити проміжні висновки.",
+        "Відпрацювати приклади з практичними вправами за темою."
+      ],
+      "links": [
+        {
+          "title": "Оглядова стаття по темі: Логіка",
+          "url": "https://example.com/materials/Логіка"
+        },
+        {
+          "title": "NotebookLM (запустіть цей запит)",
+          "url": "https://workspace.google.com/notebook-lm"
+        }
+      ],
+      "notebooklm_prompt": "You are a helpful tutor. A student submitted the following answer and it was evaluated against the correct answer.\nProvide a clear, step-by-step explanation of where the student went wrong, a concise conceptual correction, and a short practice plan (3 exercises) with increasing difficulty.\n\nCorrect answer:\nДві змінні\n\nStudent answer:\nОдну змінну\n\nAlso include suggested external readings or resources and recommend how the student should use them (e.g., which sections to read, what to practice)."
+    },
+    "policy_validation": {
+      "ok": true,
+      "issues": [],
+      "llm_checked": false
+    }
+  },
+  {
+    "question_id": "Q-008",
+    "question": "Яке поняття в теорії графів описує ситуацію, коли дві вершини з'єднані одним ребром?",
+    "topic": "Графи та дерева",
+    "student_answer": "A",
+    "correct_answer": "C",
+    "student_answer_text": "Кореляція",
+    "correct_answer_text": "Інцидентність",
+    "comment": "",
+    "is_correct": false,
+    "analyst": {
+      "role": "Analyst",
+      "language": "uk",
+      "ai_explanation": "Аналітик (українською): помилка у темі 'Графи та дерева'. Студент обрав 'Кореляція', тоді як правильна відповідь: 'Інцидентність'. Рекомендується повторити визначення і виконати міні-перевірку на аналогічному прикладі."
+    },
+    "architect": {
+      "role": "Architect",
+      "language": "uk",
+      "custom_prompt": "Привіт! Я вивчаю дискретну математику за Андерсоном і хочу розібрати свою помилку.\n\nПитання: Яке поняття в теорії графів описує ситуацію, коли дві вершини з'єднані одним ребром?\nМоя відповідь: Кореляція\nПравильна відповідь: Інцидентність\n\nПоясни, будь ласка, простими словами, у чому моя помилка і як мислити правильно. Потім дай 2 короткі запитання для самоперевірки та 3 вправи: легка, середня, складна."
+    },
+    "routing": {
+      "notebook_url": "https://notebooklm.google.com/notebook/b97eab68-8b20-4803-85fd-0907afc2f21f",
+      "section": "Степені вершин, шляхи, дерева, Ейлерові графи",
+      "keywords": [
+        "графи",
+        "дерева",
+        "вершини",
+        "ребра",
+        "шляхи",
+        "інцидентність",
+        "степінь вершини",
+        "двочастковий",
+        "теорема ейлера",
+        "ейлерові графи"
+      ]
+    },
+    "grader": {
+      "correct": false,
+      "score": 0.182,
+      "diff": [
+        "- Кореляція",
+        "+ Інцидентність"
+      ],
+      "summary": "Відповідь помилкова — спостерігається невірне розуміння або пропуск ключових моментів."
+    },
+    "feedback": {
+      "explanation": "Аналіз показує: Відповідь помилкова — спостерігається невірне розуміння або пропуск ключових моментів.\nІмовірний тип помилки: невірне розуміння ключових понять.\nДетально: порівняння відповіді студента і правильної відповіді (diff) нижче.\nDiff:\n- Кореляція\n+ Інцидентність",
+      "recommendations": [
+        "Уточнити визначення ключових термінів у питанні.",
+        "Розбити задачу на кроки і перевірити проміжні висновки.",
+        "Відпрацювати приклади з практичними вправами за темою."
+      ],
+      "links": [
+        {
+          "title": "Оглядова стаття по темі: Графи та дерева",
+          "url": "https://example.com/materials/Графи%20та%20дерева"
+        },
+        {
+          "title": "NotebookLM (запустіть цей запит)",
+          "url": "https://workspace.google.com/notebook-lm"
+        }
+      ],
+      "notebooklm_prompt": "You are a helpful tutor. A student submitted the following answer and it was evaluated against the correct answer.\nProvide a clear, step-by-step explanation of where the student went wrong, a concise conceptual correction, and a short practice plan (3 exercises) with increasing difficulty.\n\nCorrect answer:\nІнцидентність\n\nStudent answer:\nКореляція\n\nAlso include suggested external readings or resources and recommend how the student should use them (e.g., which sections to read, what to practice)."
+    },
+    "policy_validation": {
+      "ok": true,
+      "issues": [],
+      "llm_checked": false
+    }
+  },
+  {
+    "question_id": "Q-012",
+    "question": "Яка з властивостей алгоритму означає, що він повинен бути розбитий на прості кроки, зрозумілі виконавцю?",
+    "topic": "Алгоритми та рекурсія",
+    "student_answer": "B",
+    "correct_answer": "C",
+    "student_answer_text": "Визначеність",
+    "correct_answer_text": "Елементарність",
+    "comment": "",
+    "is_correct": false,
+    "analyst": {
+      "role": "Analyst",
+      "language": "uk",
+      "ai_explanation": "Аналітик (українською): помилка у темі 'Алгоритми та рекурсія'. Студент обрав 'Визначеність', тоді як правильна відповідь: 'Елементарність'. Рекомендується повторити визначення і виконати міні-перевірку на аналогічному прикладі."
+    },
+    "architect": {
+      "role": "Architect",
+      "language": "uk",
+      "custom_prompt": "Привіт! Я вивчаю дискретну математику за Андерсоном і хочу розібрати свою помилку.\n\nПитання: Яка з властивостей алгоритму означає, що він повинен бути розбитий на прості кроки, зрозумілі виконавцю?\nМоя відповідь: Визначеність\nПравильна відповідь: Елементарність\n\nПоясни, будь ласка, простими словами, у чому моя помилка і як мислити правильно. Потім дай 2 короткі запитання для самоперевірки та 3 вправи: легка, середня, складна."
+    },
+    "routing": {
+      "notebook_url": "https://notebooklm.google.com/notebook/8c7b6a49-ea3a-43de-8049-5580346f1d3a",
+      "section": "Алгоритми, рекурсія, схема Горнера",
+      "keywords": [
+        "алгоритм",
+        "рекурсія",
+        "складність",
+        "big o",
+        "бінарний пошук",
+        "схема горнера",
+        "елементарність",
+        "властивості алгоритму"
+      ]
+    },
+    "grader": {
+      "correct": false,
+      "score": 0.538,
+      "diff": [
+        "- Визначеність",
+        "+ Елементарність"
+      ],
+      "summary": "Відповідь помилкова — спостерігається невірне розуміння або пропуск ключових моментів."
+    },
+    "feedback": {
+      "explanation": "Аналіз показує: Відповідь помилкова — спостерігається невірне розуміння або пропуск ключових моментів.\nІмовірний тип помилки: невірне розуміння ключових понять.\nДетально: порівняння відповіді студента і правильної відповіді (diff) нижче.\nDiff:\n- Визначеність\n+ Елементарність",
+      "recommendations": [
+        "Уточнити визначення ключових термінів у питанні.",
+        "Розбити задачу на кроки і перевірити проміжні висновки.",
+        "Відпрацювати приклади з практичними вправами за темою."
+      ],
+      "links": [
+        {
+          "title": "Оглядова стаття по темі: Алгоритми та рекурсія",
+          "url": "https://example.com/materials/Алгоритми%20та%20рекурсія"
+        },
+        {
+          "title": "NotebookLM (запустіть цей запит)",
+          "url": "https://workspace.google.com/notebook-lm"
+        }
+      ],
+      "notebooklm_prompt": "You are a helpful tutor. A student submitted the following answer and it was evaluated against the correct answer.\nProvide a clear, step-by-step explanation of where the student went wrong, a concise conceptual correction, and a short practice plan (3 exercises) with increasing difficulty.\n\nCorrect answer:\nЕлементарність\n\nStudent answer:\nВизначеність\n\nAlso include suggested external readings or resources and recommend how the student should use them (e.g., which sections to read, what to practice)."
+    },
+    "policy_validation": {
+      "ok": true,
+      "issues": [],
+      "llm_checked": false
+    }
+  },
+  {
+    "question_id": "Q-016",
+    "question": "В алгоритмі множення матриць C = AB, де A має розмір m × p, а B — p × n, за якою формулою оновлюється значення елемента Cij у внутрішньому циклі по k?",
+    "topic": "Функції та матриці",
+    "student_answer": "A",
+    "correct_answer": "C",
+    "student_answer_text": "Cij = Aik · Bkj",
+    "correct_answer_text": "Cij = Cij + Aki · Bjk",
+    "comment": "",
+    "is_correct": false,
+    "analyst": {
+      "role": "Analyst",
+      "language": "uk",
+      "ai_explanation": "Аналітик (українською): помилка у темі 'Функції та матриці'. Студент обрав 'Cij = Aik · Bkj', тоді як правильна відповідь: 'Cij = Cij + Aki · Bjk'. Рекомендується повторити визначення і виконати міні-перевірку на аналогічному прикладі."
+    },
+    "architect": {
+      "role": "Architect",
+      "language": "uk",
+      "custom_prompt": "Привіт! Я вивчаю дискретну математику за Андерсоном і хочу розібрати свою помилку.\n\nПитання: В алгоритмі множення матриць C = AB, де A має розмір m × p, а B — p × n, за якою формулою оновлюється значення елемента Cij у внутрішньому циклі по k?\nМоя відповідь: Cij = Aik · Bkj\nПравильна відповідь: Cij = Cij + Aki · Bjk\n\nПоясни, будь ласка, простими словами, у чому моя помилка і як мислити правильно. Потім дай 2 короткі запитання для самоперевірки та 3 вправи: легка, середня, складна."
+    },
+    "routing": {
+      "notebook_url": "https://notebooklm.google.com/notebook/2952f7e1-f2ff-4700-be4d-fd18db30b79d",
+      "section": "Матриці, множення матриць, функції та відображення",
+      "keywords": [
+        "матриця",
+        "добуток матриць",
+        "функції",
+        "відображення",
+        "додавання матриць",
+        "множення матриць",
+        "c = ab"
+      ]
+    },
+    "grader": {
+      "correct": false,
+      "score": 0.722,
+      "diff": [
+        "- Cij = Aik · Bkj",
+        "+ Cij = Cij + Aki · Bjk"
+      ],
+      "summary": "Відповідь частково вірна — є пропуски або деталі."
+    },
+    "feedback": {
+      "explanation": "Аналіз показує: Відповідь частково вірна — є пропуски або деталі.\nІмовірний тип помилки: часткова вірність або недостатня деталізація.\nДетально: порівняння відповіді студента і правильної відповіді (diff) нижче.\nDiff:\n- Cij = Aik · Bkj\n+ Cij = Cij + Aki · Bjk",
+      "recommendations": [
+        "Уточнити визначення ключових термінів у питанні.",
+        "Розбити задачу на кроки і перевірити проміжні висновки.",
+        "Відпрацювати приклади з практичними вправами за темою."
+      ],
+      "links": [
+        {
+          "title": "Оглядова стаття по темі: Функції та матриці",
+          "url": "https://example.com/materials/Функції%20та%20матриці"
+        },
+        {
+          "title": "NotebookLM (запустіть цей запит)",
+          "url": "https://workspace.google.com/notebook-lm"
+        }
+      ],
+      "notebooklm_prompt": "You are a helpful tutor. A student submitted the following answer and it was evaluated against the correct answer.\nProvide a clear, step-by-step explanation of where the student went wrong, a concise conceptual correction, and a short practice plan (3 exercises) with increasing difficulty.\n\nCorrect answer:\nCij = Cij + Aki · Bjk\n\nStudent answer:\nCij = Aik · Bkj\n\nAlso include suggested external readings or resources and recommend how the student should use them (e.g., which sections to read, what to practice)."
+    },
+    "policy_validation": {
+      "ok": true,
+      "issues": [],
+      "llm_checked": false
+    }
+  },
+  {
+    "question_id": "Q-019",
+    "question": "Яку властивість відношення включення описує твердження: (A ⊆ B, B ⊆ C) ⇒ (A ⊆ C)?",
+    "topic": "Теорія множин",
+    "student_answer": "A",
+    "correct_answer": "C",
+    "student_answer_text": "Ідемпотентність",
+    "correct_answer_text": "Симетричність",
+    "comment": "",
+    "is_correct": false,
+    "analyst": {
+      "role": "Analyst",
+      "language": "uk",
+      "ai_explanation": "Аналітик (українською): помилка у темі 'Теорія множин'. Студент обрав 'Ідемпотентність', тоді як правильна відповідь: 'Симетричність'. Рекомендується повторити визначення і виконати міні-перевірку на аналогічному прикладі."
+    },
+    "architect": {
+      "role": "Architect",
+      "language": "uk",
+      "custom_prompt": "Привіт! Я вивчаю дискретну математику за Андерсоном і хочу розібрати свою помилку.\n\nПитання: Яку властивість відношення включення описує твердження: (A ⊆ B, B ⊆ C) ⇒ (A ⊆ C)?\nМоя відповідь: Ідемпотентність\nПравильна відповідь: Симетричність\n\nПоясни, будь ласка, простими словами, у чому моя помилка і як мислити правильно. Потім дай 2 короткі запитання для самоперевірки та 3 вправи: легка, середня, складна."
+    },
+    "routing": {
+      "notebook_url": "https://notebooklm.google.com/notebook/fac9a29a-046b-4e5d-8028-877d0482bd83",
+      "section": "Множини, підмножини, відношення, раціональні числа",
+      "keywords": [
+        "множини",
+        "підмножини",
+        "включення",
+        "відношення",
+        "раціональні числа",
+        "симетрична різниця",
+        "декартовий добуток",
+        "власна підмножина"
+      ]
+    },
+    "grader": {
+      "correct": false,
+      "score": 0.5,
+      "diff": [
+        "- Ідемпотентність",
+        "+ Симетричність"
+      ],
+      "summary": "Відповідь помилкова — спостерігається невірне розуміння або пропуск ключових моментів."
+    },
+    "feedback": {
+      "explanation": "Аналіз показує: Відповідь помилкова — спостерігається невірне розуміння або пропуск ключових моментів.\nІмовірний тип помилки: невірне розуміння ключових понять.\nДетально: порівняння відповіді студента і правильної відповіді (diff) нижче.\nDiff:\n- Ідемпотентність\n+ Симетричність",
+      "recommendations": [
+        "Уточнити визначення ключових термінів у питанні.",
+        "Розбити задачу на кроки і перевірити проміжні висновки.",
+        "Відпрацювати приклади з практичними вправами за темою."
+      ],
+      "links": [
+        {
+          "title": "Оглядова стаття по темі: Теорія множин",
+          "url": "https://example.com/materials/Теорія%20множин"
+        },
+        {
+          "title": "NotebookLM (запустіть цей запит)",
+          "url": "https://workspace.google.com/notebook-lm"
+        }
+      ],
+      "notebooklm_prompt": "You are a helpful tutor. A student submitted the following answer and it was evaluated against the correct answer.\nProvide a clear, step-by-step explanation of where the student went wrong, a concise conceptual correction, and a short practice plan (3 exercises) with increasing difficulty.\n\nCorrect answer:\nСиметричність\n\nStudent answer:\nІдемпотентність\n\nAlso include suggested external readings or resources and recommend how the student should use them (e.g., which sections to read, what to practice)."
+    },
+    "policy_validation": {
+      "ok": true,
+      "issues": [],
+      "llm_checked": false
+    }
+  }
+]

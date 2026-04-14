@@ -1,0 +1,97 @@
+{
+  "Логіка": {
+    "url": "https://notebooklm.google.com/notebook/1652e15b-2235-4a56-b934-60a4a0c77396",
+    "notebooklm_workbook": "https://notebooklm.google.com/notebook/1652e15b-2235-4a56-b934-60a4a0c77396",
+    "section": "Таблиці істинності, імплікація, закони де Моргана, ДНФ, тавтології",
+    "keywords": [
+      "таблиці істинності",
+      "імплікація",
+      "де моргана",
+      "днф",
+      "карти карно",
+      "логіка",
+      "тавтологія",
+      "карта карно",
+      "дднф",
+      "істинність"
+    ]
+  },
+  "Алгебраїчні структури": {
+    "url": "https://notebooklm.google.com/notebook/c0c343b1-5532-43b5-9235-8bbe921be8d6",
+    "notebooklm_workbook": "https://notebooklm.google.com/notebook/c0c343b1-5532-43b5-9235-8bbe921be8d6",
+    "section": "Бінарні операції, групи, кільця, поля",
+    "keywords": [
+      "бінарні операції",
+      "структури",
+      "групи",
+      "кільця",
+      "поля",
+      "напівгрупа",
+      "моноїд",
+      "підгрупа",
+      "лагранжа",
+      "порядок групи"
+    ]
+  },
+  "Теорія множин": {
+    "url": "https://notebooklm.google.com/notebook/fac9a29a-046b-4e5d-8028-877d0482bd83",
+    "notebooklm_workbook": "https://notebooklm.google.com/notebook/fac9a29a-046b-4e5d-8028-877d0482bd83",
+    "section": "Множини, підмножини, відношення, раціональні числа",
+    "keywords": [
+      "множини",
+      "підмножини",
+      "включення",
+      "відношення",
+      "раціональні числа",
+      "симетрична різниця",
+      "декартовий добуток",
+      "власна підмножина"
+    ]
+  },
+  "Функції та матриці": {
+    "url": "https://notebooklm.google.com/notebook/2952f7e1-f2ff-4700-be4d-fd18db30b79d",
+    "notebooklm_workbook": "https://notebooklm.google.com/notebook/2952f7e1-f2ff-4700-be4d-fd18db30b79d",
+    "section": "Матриці, множення матриць, функції та відображення",
+    "keywords": [
+      "матриця",
+      "добуток матриць",
+      "функції",
+      "відображення",
+      "додавання матриць",
+      "множення матриць",
+      "c = ab"
+    ]
+  },
+  "Алгоритми та рекурсія": {
+    "url": "https://notebooklm.google.com/notebook/8c7b6a49-ea3a-43de-8049-5580346f1d3a",
+    "notebooklm_workbook": "https://notebooklm.google.com/notebook/8c7b6a49-ea3a-43de-8049-5580346f1d3a",
+    "section": "Алгоритми, рекурсія, схема Горнера",
+    "keywords": [
+      "алгоритм",
+      "рекурсія",
+      "складність",
+      "big o",
+      "бінарний пошук",
+      "схема горнера",
+      "елементарність",
+      "властивості алгоритму"
+    ]
+  },
+  "Графи та дерева": {
+    "url": "https://notebooklm.google.com/notebook/b97eab68-8b20-4803-85fd-0907afc2f21f",
+    "notebooklm_workbook": "https://notebooklm.google.com/notebook/b97eab68-8b20-4803-85fd-0907afc2f21f",
+    "section": "Степені вершин, шляхи, дерева, Ейлерові графи",
+    "keywords": [
+      "графи",
+      "дерева",
+      "вершини",
+      "ребра",
+      "шляхи",
+      "інцидентність",
+      "степінь вершини",
+      "двочастковий",
+      "теорема ейлера",
+      "ейлерові графи"
+    ]
+  }
+}

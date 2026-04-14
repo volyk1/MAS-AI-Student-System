@@ -1,0 +1,5 @@
+General AI Use Policy (University) - 2023
+
+- Do not request or provide personally identifiable information (PII) such as student IDs, SSNs, passports, credit card numbers.
+- Do not request generation of exam answers or instructions to bypass academic integrity.
+- Use AI tools responsibly; do not ask to fabricate, forge, or misrepresent student work.
