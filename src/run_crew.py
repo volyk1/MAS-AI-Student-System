@@ -73,15 +73,15 @@ def get_notebook_url(question_text: str, topic: str = "", mapping_path: str = DE
 
 
 def _build_architect_prompt(question_text: str, student_answer: str, correct_answer: str, comment: str = "") -> str:
-    comment_block = f"Причина помилки (коментар): {comment}\n" if comment else ""
+    comment_block = f"Reason for the error (comment): {comment}\n" if comment else ""
     return (
-        "Привіт! Я вивчаю дискретну математику за Андерсоном і хочу розібрати свою помилку.\n\n"
-        f"Питання: {question_text}\n"
-        f"Моя відповідь: {student_answer}\n"
-        f"Правильна відповідь: {correct_answer}\n"
+        "Hi! I'm studying discrete mathematics using Anderson's textbook and want to figure out where I went wrong.\n\n"
+        f"Question: {question_text}\n"
+        f"My answer: {student_answer}\n"
+        f"The correct answer: {correct_answer}\n"
         f"{comment_block}\n"
-        "Поясни, будь ласка, простими словами, у чому моя помилка і як мислити правильно. "
-        "Потім дай 2 короткі запитання для самоперевірки та 3 вправи: легка, середня, складна."
+        "Please explain in simple terms where I went wrong and how to think correctly."
+        "Then provide 2 short self-assessment questions and 3 exercises: easy, medium, and difficult."
     )
 
 
@@ -106,11 +106,11 @@ def _analyze_wrong_answer(row: Dict[str, Any], mapping: Dict[str, Any]) -> Dict[
     feedback = feedback_agent(grader, student_answer_text, correct_answer_text, topic=mapping_info.get("topic", topic))
 
     analyst_text = (
-        "Аналітик (українською): "
-        f"помилка у темі '{mapping_info.get('topic', topic)}'. "
-        f"Студент обрав '{student_answer_text}', тоді як правильна відповідь: '{correct_answer_text}'. "
-        f"{('Коментар до помилки: ' + str(comment) + '. ') if comment else ''}"
-        "Рекомендується повторити визначення і виконати міні-перевірку на аналогічному прикладі."
+        "Analyst: "
+        f"error in the subject line '{mapping_info.get('topic', topic)}'. "
+        f"The student chose '{student_answer_text}', whereas the correct answer is: '{correct_answer_text}'. "
+        f"{('Comment on the error: ' + str(comment) + '. ') if comment else ''}"
+        "It is recommended that you review the definition and complete a short exercise using a similar example."
     )
 
     architect_prompt = _build_architect_prompt(

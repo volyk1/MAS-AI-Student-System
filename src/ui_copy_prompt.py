@@ -50,7 +50,7 @@ def _cleanup_legacy_results() -> None:
 
 def _ensure_pipeline() -> None:
     _cleanup_legacy_results()
-    print("[AUTO] Генерація сесії: question.json -> current_session.json -> final_analysis.json")
+    print("[AUTO] Session generation: question.json -> current_session.json -> final_analysis.json")
     process_database_main(
         question_path="data/question.json",
         output_path="data/current_session.json",
@@ -135,7 +135,7 @@ def _build_analysis_payload(question_id: str):
         return {
             "ok": False,
             "question_id": question_id,
-            "message": "Питання не знайдено у поточній сесії.",
+            "message": "No results found for this query in the current session.",
         }
 
     is_correct = bool(session_row.get("is_correct", False))
@@ -164,11 +164,11 @@ def _build_analysis_payload(question_id: str):
     section = routing.get("section", "")
     keywords = routing.get("keywords", []) if isinstance(routing.get("keywords"), list) else []
     if topic:
-        context = f"Тема: {topic}"
+        context = f"Topic: {topic}"
     if section:
-        context = f"{context} | Розділ: {section}" if context else f"Розділ: {section}"
+        context = f"{context} | Section: {section}" if context else f"Section: {section}"
     if keywords:
-        context = f"{context} | Ключові слова: {', '.join(keywords[:6])}" if context else f"Ключові слова: {', '.join(keywords[:6])}"
+        context = f"{context} | Keywords: {', '.join(keywords[:6])}" if context else f"Keywords: {', '.join(keywords[:6])}"
 
     return {
         "ok": True,
@@ -186,7 +186,7 @@ def _build_analysis_payload(question_id: str):
         "notebook_url": notebook_url,
         "context": context,
         "has_help": not is_correct and bool(prompt_text),
-        "message": "Відповідь правильна. Додаткова допомога ШІ не потрібна." if is_correct else "",
+        "message": "The answer is correct. No additional AI assistance is needed." if is_correct else "",
     }
 
 
@@ -228,7 +228,7 @@ class PromptHandler(BaseHTTPRequestHandler):
 
         if parsed.path == "/api/rebuild":
             _ensure_pipeline()
-            self._write_json({"ok": True, "message": "Сесію оновлено."})
+            self._write_json({"ok": True, "message": "Session updated."})
             return
 
         route = parsed.path

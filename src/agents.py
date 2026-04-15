@@ -48,14 +48,14 @@ def grader_agent(student_answer: str, correct_answer: str) -> Dict[str, Any]:
 
 def _extract_topic_from_text(text: str) -> str:
 	keywords = {
-		"класифікац": "кроки класифікації",
-		"регрес": "регресія",
-		"нейрон": "нейронні мережі",
-		"нормал": "передобробка / нормалізація",
-		"метрик": "оцінка та метрики",
-		"стек": "Лінійні структури даних",
-		"binary": "Складність алгоритмів",
-		"log n": "Складність алгоритмів",
+		"classification": "classification steps",
+		"regression": "regression",
+		"neuron": "neural networks",
+		"normalization": "preprocessing / normalization",
+		"metric": "evaluation and metrics",
+		"stack": "Linear data structures",
+		"binary": "Complexity of algorithms",
+		"log n": "Complexity of algorithms",
 	}
 	tl = (text or "").lower()
 	for k, t in keywords.items():
@@ -296,16 +296,16 @@ def prompt_engineer_agent(
 		evidence_line = "Що я занотував: " + "; ".join([str(x) for x in evidence[:3]])
 
 	full_query = (
-		f"Привіт! Я вивчаю тему {topic} за Андерсоном. "
-		f"У тесті на питання '{question_text or 'без назви питання'}' я відповів '{student_answer}', "
-		f"але правильна відповідь — '{correct_answer}'. "
-		"Допоможи мені зрозуміти, чому моя відповідь помилкова і в чому полягає логіка правильного варіанту.\n\n"
-		f"Що саме не розумію: {concept_description}.\n"
+		f"Hi! I'm studying this topic {topic} according to Anderson. "
+		f"In the multiple-choice test '{question_text or 'без назви питання'}' I replied '{student_answer}', "
+		f"but the correct answer — '{correct_answer}'. "
+		"Please help me understand why my answer is wrong and what the logic behind the correct answer is.\n\n"
+		f"What exactly don't I understand: {concept_description}.\n"
 		f"{comment_line}\n"
 		f"{memory_line}\n"
 		f"{evidence_line}\n\n"
-		"Поясни простими словами, дай короткий покроковий розбір, "
-		"постав 2 уточнювальні запитання і запропонуй 3 міні-вправи (легка, середня, складна)."
+		"Explain it in simple terms and provide a brief step-by-step breakdown, "
+		"Ask 2 follow-up questions and suggest 3 mini-exercises (easy, medium, difficult)."
 	).strip()
 
 	student_instruction = f"Скопіюйте цей запит у NotebookLM workbook ({workbook_link or 'посилання відсутнє'}) та запустіть його для теми '{topic}'."

@@ -12,63 +12,63 @@
   <body>
     <main class="page">
       <header class="hero card">
-        <p class="eyebrow">KSU24 • Дискретна математика Андерсона</p>
-        <h1>Перевірка сесії та допомога ШІ</h1>
-        <p class="subtitle">Зелені питання — правильні. Червоні — з помилкою та персоналізованою допомогою від AI.</p>
+        <p class="eyebrow">KSU24 • Anderson's Discrete Mathematics</p>
+        <h1>Session verification and AI assistance</h1>
+        <p class="subtitle">Green questions are correct. Red ones contain errors and receive personalized assistance from AI.</p>
         <div class="stats">
-          <span>Усього: <strong id="totalCount">0</strong></span>
-          <span>Правильних: <strong id="correctCount">0</strong></span>
-          <span>Помилок: <strong id="wrongCount">0</strong></span>
-          <button id="refreshBtn" class="ghost" type="button">Оновити сесію</button>
+          <span>Total: <strong id="totalCount">0</strong></span>
+          <span>Correct: <strong id="correctCount">0</strong></span>
+          <span>Errors: <strong id="wrongCount">0</strong></span>
+          <button id="refreshBtn" class="ghost" type="button">Refresh session</button>
         </div>
       </header>
 
       <section class="layout">
         <article class="card list-panel">
-          <h2>Список питань</h2>
+          <h2>List of questions</h2>
           <div id="questionList" class="question-list"></div>
         </article>
 
         <article class="card details-panel">
-          <h2>Деталі питання</h2>
-          <p class="hint" id="detailHint">Оберіть питання зі списку ліворуч.</p>
+          <h2>Details of the issue</h2>
+          <p class="hint" id="detailHint">Select a question from the list on the left.</p>
 
           <div id="errorSection" class="major-section">
-            <h3>Блок помилки</h3>
+            <h3>Error block</h3>
             <div class="detail-grid">
               <div>
-                <p class="label">Питання</p>
+                <p class="label">Question</p>
                 <p id="detailQuestion" class="value">—</p>
               </div>
               <div>
-                <p class="label">Тема</p>
+                <p class="label">Subject</p>
                 <p id="detailTopic" class="value">—</p>
               </div>
               <div>
-                <p class="label">Відповідь студента</p>
+                <p class="label">Student's response</p>
                 <p id="detailStudent" class="value">—</p>
               </div>
               <div>
-                <p class="label">Правильна відповідь</p>
+                <p class="label">The correct answer</p>
                 <p id="detailCorrect" class="value strong">—</p>
               </div>
             </div>
           </div>
 
           <div id="explanationSection" class="major-section">
-            <h3>Пояснення від AI</h3>
+            <h3>Explanation from AI</h3>
             <p id="detailExplanation" class="explanation">—</p>
 
-            <p class="label">Контекст</p>
+            <p class="label">Context</p>
             <p id="detailContext" class="context">—</p>
           </div>
 
           <div id="promptSection" class="major-section">
             <h3>Prompt</h3>
             <div class="actions">
-              <button id="copyBtn" class="accent" type="button" disabled>Скопіювати запит</button>
-              <button id="openNotebookBtn" class="cta" type="button" disabled>Перейти до NotebookLM</button>
-              <span id="copyOk" class="copy-ok" hidden>Скопійовано! ✅</span>
+              <button id="copyBtn" class="accent" type="button" disabled>Copy the query</button>
+              <button id="openNotebookBtn" class="cta" type="button" disabled>Go to NotebookLM</button>
+              <span id="copyOk" class="copy-ok" hidden>Copied! ✅</span>
             </div>
 
             <pre id="detailPrompt" class="prompt-box">—</pre>

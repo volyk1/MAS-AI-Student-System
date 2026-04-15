@@ -47,7 +47,7 @@ function clearDetails() {
 
 
 function statusLabel(item) {
-  return item.is_correct ? "Правильно ✅" : "Помилка ❌";
+  return item.is_correct ? "Correct ✅" : "Error ❌";
 }
 
 function renderQuestionList() {
@@ -88,7 +88,7 @@ function renderQuestionList() {
       const btn = document.createElement("button");
       btn.className = "mini-cta";
       btn.type = "button";
-      btn.textContent = "AI Допомога";
+      btn.textContent = "AI Helper";
       btn.addEventListener("click", (evt) => {
         evt.stopPropagation();
         selectQuestion(item.question_id);
@@ -121,7 +121,7 @@ async function loadSession() {
 
   if (state.session.length > 0) {
     clearDetails();
-    el.detailHint.textContent = "Оберіть помилкове питання для перегляду аналізу та prompt.";
+    el.detailHint.textContent = "Select a test question to view the analysis and prompt.";
   }
 }
 
@@ -135,13 +135,13 @@ function renderDetails(payload) {
   el.detailCorrect.textContent = payload.correct_answer || "—";
   el.detailStudent.classList.remove("answer-wrong", "answer-ok");
   el.detailCorrect.classList.remove("answer-wrong", "answer-ok");
-  el.detailContext.textContent = payload.context || "Контекст недоступний";
+  el.detailContext.textContent = payload.context || "Context not available";
 
   if (isCorrect) {
     el.detailStudent.classList.add("answer-ok");
     el.detailCorrect.classList.add("answer-ok");
-    el.detailHint.textContent = "Молодець! Правильно ✅";
-    el.detailExplanation.textContent = payload.message || "Молодець! Правильно ✅";
+    el.detailHint.textContent = "Good job! That's right ✅";
+    el.detailExplanation.textContent = payload.message || "Good job! That's right ✅";
     el.promptSection.classList.add("hidden");
     el.copyBtn.disabled = true;
     el.openNotebookBtn.disabled = true;
@@ -153,9 +153,9 @@ function renderDetails(payload) {
   el.detailStudent.classList.add("answer-wrong");
   el.detailCorrect.classList.add("answer-ok");
   el.promptSection.classList.remove("hidden");
-  el.detailHint.textContent = "Помилка ❌. Доступний персоналізований розбір.";
-  el.detailExplanation.textContent = payload.ai_explanation || "Пояснення недоступне.";
-  el.detailPrompt.textContent = payload.custom_prompt || "Prompt відсутній.";
+  el.detailHint.textContent = "Error ❌. Personalized analysis available.";
+  el.detailExplanation.textContent = payload.ai_explanation || "Explanation not available.";
+  el.detailPrompt.textContent = payload.custom_prompt || "No prompt.";
 
   state.currentPrompt = payload.custom_prompt || "";
   state.currentNotebookUrl = payload.notebook_url || "";
@@ -186,7 +186,7 @@ async function refreshSession() {
     await fetch("/api/rebuild");
     await loadSession();
     clearDetails();
-    el.detailHint.textContent = "Сесію оновлено. Оберіть питання зі списку.";
+    el.detailHint.textContent = "The session has been refreshed. Select a question from the list.";
   } finally {
     el.refreshBtn.disabled = false;
   }
@@ -214,15 +214,15 @@ async function copyPrompt() {
     }
 
     el.copyOk.hidden = false;
-    el.copyBtn.textContent = "Скопійовано! ✅";
+    el.copyBtn.textContent = "Copied! ✅";
     setTimeout(() => {
       el.copyOk.hidden = true;
-      el.copyBtn.textContent = "Скопіювати запит";
+      el.copyBtn.textContent = "Copy the query";
     }, 1200);
   } catch (_err) {
-    el.copyBtn.textContent = "Помилка копіювання";
+    el.copyBtn.textContent = "Copy error";
     setTimeout(() => {
-      el.copyBtn.textContent = "Скопіювати запит";
+      el.copyBtn.textContent = "Copy the query";
     }, 1200);
   }
 }
@@ -239,5 +239,5 @@ el.copyBtn.addEventListener("click", copyPrompt);
 el.openNotebookBtn.addEventListener("click", openNotebook);
 
 loadSession().catch(() => {
-  el.detailHint.textContent = "Не вдалося завантажити сесію.";
+  el.detailHint.textContent = "Unable to load the session.";
 });

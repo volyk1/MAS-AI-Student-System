@@ -1,51 +1,50 @@
 [
   {
     "question_id": "Q-004",
-    "question": "При спрощенні виразів за допомогою карти Карно, об'єднання чотирьох сусідніх клітин дозволяє виключити зі складової кон'юнкції:",
-    "topic": "Логіка",
+    "question": "When simplifying expressions using a Karnaugh map, grouping four adjacent cells allows you to eliminate from the conjunction term:",
+    "topic": "Logic",
     "student_answer": "B",
     "correct_answer": "C",
-    "student_answer_text": "Одну змінну",
-    "correct_answer_text": "Дві змінні",
+    "student_answer_text": "One variable",
+    "correct_answer_text": "Two variables",
     "comment": "",
     "is_correct": false,
     "analyst": {
       "role": "Analyst",
       "language": "uk",
-      "ai_explanation": "Аналітик (українською): помилка у темі 'Логіка'. Студент обрав 'Одну змінну', тоді як правильна відповідь: 'Дві змінні'. Рекомендується повторити визначення і виконати міні-перевірку на аналогічному прикладі."
+      "ai_explanation": "Analyst: error in the subject line 'Logic'. The student chose 'One variable', whereas the correct answer is: 'Two variables'. It is recommended that you review the definition and complete a short exercise using a similar example."
     },
     "architect": {
       "role": "Architect",
       "language": "uk",
-      "custom_prompt": "Привіт! Я вивчаю дискретну математику за Андерсоном і хочу розібрати свою помилку.\n\nПитання: При спрощенні виразів за допомогою карти Карно, об'єднання чотирьох сусідніх клітин дозволяє виключити зі складової кон'юнкції:\nМоя відповідь: Одну змінну\nПравильна відповідь: Дві змінні\n\nПоясни, будь ласка, простими словами, у чому моя помилка і як мислити правильно. Потім дай 2 короткі запитання для самоперевірки та 3 вправи: легка, середня, складна."
+      "custom_prompt": "Hi! I'm studying discrete mathematics using Anderson's textbook and want to figure out where I went wrong.\n\nQuestion: When simplifying expressions using a Karnaugh map, grouping four adjacent cells allows you to eliminate from the conjunction term:\nMy answer: One variable\nThe correct answer: Two variables\n\nPlease explain in simple terms where I went wrong and how to think correctly.Then provide 2 short self-assessment questions and 3 exercises: easy, medium, and difficult."
     },
     "routing": {
       "notebook_url": "https://notebooklm.google.com/notebook/1652e15b-2235-4a56-b934-60a4a0c77396",
-      "section": "Таблиці істинності, імплікація, закони де Моргана, ДНФ, тавтології",
+      "section": "Truth tables, implication, De Morgan's laws, DNF, tautologies",
       "keywords": [
-        "таблиці істинності",
-        "імплікація",
-        "де моргана",
-        "днф",
-        "карти карно",
-        "логіка",
-        "тавтологія",
-        "карта карно",
-        "дднф",
-        "істинність"
+        "truth tables",
+        "implication",
+        "de morgan's",
+        "dnf",
+        "karnaugh maps",
+        "logic",
+        "tautologies",
+        "pdnf",
+        "truth"
       ]
     },
     "grader": {
       "correct": false,
-      "score": 0.571,
+      "score": 0.72,
       "diff": [
-        "- Одну змінну",
-        "+ Дві змінні"
+        "- One variable",
+        "+ Two variables"
       ],
-      "summary": "Відповідь помилкова — спостерігається невірне розуміння або пропуск ключових моментів."
+      "summary": "Відповідь частково вірна — є пропуски або деталі."
     },
     "feedback": {
-      "explanation": "Аналіз показує: Відповідь помилкова — спостерігається невірне розуміння або пропуск ключових моментів.\nІмовірний тип помилки: невірне розуміння ключових понять.\nДетально: порівняння відповіді студента і правильної відповіді (diff) нижче.\nDiff:\n- Одну змінну\n+ Дві змінні",
+      "explanation": "Аналіз показує: Відповідь частково вірна — є пропуски або деталі.\nІмовірний тип помилки: часткова вірність або недостатня деталізація.\nДетально: порівняння відповіді студента і правильної відповіді (diff) нижче.\nDiff:\n- One variable\n+ Two variables",
       "recommendations": [
         "Уточнити визначення ключових термінів у питанні.",
         "Розбити задачу на кроки і перевірити проміжні висновки.",
@@ -53,15 +52,15 @@
       ],
       "links": [
         {
-          "title": "Оглядова стаття по темі: Логіка",
-          "url": "https://example.com/materials/Логіка"
+          "title": "Оглядова стаття по темі: Logic",
+          "url": "https://example.com/materials/Logic"
         },
         {
           "title": "NotebookLM (запустіть цей запит)",
           "url": "https://workspace.google.com/notebook-lm"
         }
       ],
-      "notebooklm_prompt": "You are a helpful tutor. A student submitted the following answer and it was evaluated against the correct answer.\nProvide a clear, step-by-step explanation of where the student went wrong, a concise conceptual correction, and a short practice plan (3 exercises) with increasing difficulty.\n\nCorrect answer:\nДві змінні\n\nStudent answer:\nОдну змінну\n\nAlso include suggested external readings or resources and recommend how the student should use them (e.g., which sections to read, what to practice)."
+      "notebooklm_prompt": "You are a helpful tutor. A student submitted the following answer and it was evaluated against the correct answer.\nProvide a clear, step-by-step explanation of where the student went wrong, a concise conceptual correction, and a short practice plan (3 exercises) with increasing difficulty.\n\nCorrect answer:\nTwo variables\n\nStudent answer:\nOne variable\n\nAlso include suggested external readings or resources and recommend how the student should use them (e.g., which sections to read, what to practice)."
     },
     "policy_validation": {
       "ok": true,
@@ -71,51 +70,51 @@
   },
   {
     "question_id": "Q-008",
-    "question": "Яке поняття в теорії графів описує ситуацію, коли дві вершини з'єднані одним ребром?",
-    "topic": "Графи та дерева",
+    "question": "What concept in graph theory describes a situation where two vertices are connected by one edge?",
+    "topic": "Graphs and Trees",
     "student_answer": "A",
     "correct_answer": "C",
-    "student_answer_text": "Кореляція",
-    "correct_answer_text": "Інцидентність",
+    "student_answer_text": "Correlation",
+    "correct_answer_text": "Incidence",
     "comment": "",
     "is_correct": false,
     "analyst": {
       "role": "Analyst",
       "language": "uk",
-      "ai_explanation": "Аналітик (українською): помилка у темі 'Графи та дерева'. Студент обрав 'Кореляція', тоді як правильна відповідь: 'Інцидентність'. Рекомендується повторити визначення і виконати міні-перевірку на аналогічному прикладі."
+      "ai_explanation": "Analyst: error in the subject line 'Graphs and Trees'. The student chose 'Correlation', whereas the correct answer is: 'Incidence'. It is recommended that you review the definition and complete a short exercise using a similar example."
     },
     "architect": {
       "role": "Architect",
       "language": "uk",
-      "custom_prompt": "Привіт! Я вивчаю дискретну математику за Андерсоном і хочу розібрати свою помилку.\n\nПитання: Яке поняття в теорії графів описує ситуацію, коли дві вершини з'єднані одним ребром?\nМоя відповідь: Кореляція\nПравильна відповідь: Інцидентність\n\nПоясни, будь ласка, простими словами, у чому моя помилка і як мислити правильно. Потім дай 2 короткі запитання для самоперевірки та 3 вправи: легка, середня, складна."
+      "custom_prompt": "Hi! I'm studying discrete mathematics using Anderson's textbook and want to figure out where I went wrong.\n\nQuestion: What concept in graph theory describes a situation where two vertices are connected by one edge?\nMy answer: Correlation\nThe correct answer: Incidence\n\nPlease explain in simple terms where I went wrong and how to think correctly.Then provide 2 short self-assessment questions and 3 exercises: easy, medium, and difficult."
     },
     "routing": {
       "notebook_url": "https://notebooklm.google.com/notebook/b97eab68-8b20-4803-85fd-0907afc2f21f",
-      "section": "Степені вершин, шляхи, дерева, Ейлерові графи",
+      "section": "Vertex degrees, paths, trees, Eulerian graphs",
       "keywords": [
-        "графи",
-        "дерева",
-        "вершини",
-        "ребра",
-        "шляхи",
-        "інцидентність",
-        "степінь вершини",
-        "двочастковий",
-        "теорема ейлера",
-        "ейлерові графи"
+        "graphs",
+        "trees",
+        "vertices",
+        "edges",
+        "paths",
+        "incidence",
+        "vertex degree",
+        "bipartite",
+        "euler theorem",
+        "eulerian graphs"
       ]
     },
     "grader": {
       "correct": false,
-      "score": 0.182,
+      "score": 0.2,
       "diff": [
-        "- Кореляція",
-        "+ Інцидентність"
+        "- Correlation",
+        "+ Incidence"
       ],
       "summary": "Відповідь помилкова — спостерігається невірне розуміння або пропуск ключових моментів."
     },
     "feedback": {
-      "explanation": "Аналіз показує: Відповідь помилкова — спостерігається невірне розуміння або пропуск ключових моментів.\nІмовірний тип помилки: невірне розуміння ключових понять.\nДетально: порівняння відповіді студента і правильної відповіді (diff) нижче.\nDiff:\n- Кореляція\n+ Інцидентність",
+      "explanation": "Аналіз показує: Відповідь помилкова — спостерігається невірне розуміння або пропуск ключових моментів.\nІмовірний тип помилки: невірне розуміння ключових понять.\nДетально: порівняння відповіді студента і правильної відповіді (diff) нижче.\nDiff:\n- Correlation\n+ Incidence",
       "recommendations": [
         "Уточнити визначення ключових термінів у питанні.",
         "Розбити задачу на кроки і перевірити проміжні висновки.",
@@ -123,15 +122,15 @@
       ],
       "links": [
         {
-          "title": "Оглядова стаття по темі: Графи та дерева",
-          "url": "https://example.com/materials/Графи%20та%20дерева"
+          "title": "Оглядова стаття по темі: Graphs and Trees",
+          "url": "https://example.com/materials/Graphs%20and%20Trees"
         },
         {
           "title": "NotebookLM (запустіть цей запит)",
           "url": "https://workspace.google.com/notebook-lm"
         }
       ],
-      "notebooklm_prompt": "You are a helpful tutor. A student submitted the following answer and it was evaluated against the correct answer.\nProvide a clear, step-by-step explanation of where the student went wrong, a concise conceptual correction, and a short practice plan (3 exercises) with increasing difficulty.\n\nCorrect answer:\nІнцидентність\n\nStudent answer:\nКореляція\n\nAlso include suggested external readings or resources and recommend how the student should use them (e.g., which sections to read, what to practice)."
+      "notebooklm_prompt": "You are a helpful tutor. A student submitted the following answer and it was evaluated against the correct answer.\nProvide a clear, step-by-step explanation of where the student went wrong, a concise conceptual correction, and a short practice plan (3 exercises) with increasing difficulty.\n\nCorrect answer:\nIncidence\n\nStudent answer:\nCorrelation\n\nAlso include suggested external readings or resources and recommend how the student should use them (e.g., which sections to read, what to practice)."
     },
     "policy_validation": {
       "ok": true,
@@ -141,49 +140,49 @@
   },
   {
     "question_id": "Q-012",
-    "question": "Яка з властивостей алгоритму означає, що він повинен бути розбитий на прості кроки, зрозумілі виконавцю?",
-    "topic": "Алгоритми та рекурсія",
+    "question": "Which property of an algorithm means that it must be broken down into simple steps understandable to the executor?",
+    "topic": "Algorithms and Recursion",
     "student_answer": "B",
     "correct_answer": "C",
-    "student_answer_text": "Визначеність",
-    "correct_answer_text": "Елементарність",
+    "student_answer_text": "Definiteness",
+    "correct_answer_text": "Elementariness",
     "comment": "",
     "is_correct": false,
     "analyst": {
       "role": "Analyst",
       "language": "uk",
-      "ai_explanation": "Аналітик (українською): помилка у темі 'Алгоритми та рекурсія'. Студент обрав 'Визначеність', тоді як правильна відповідь: 'Елементарність'. Рекомендується повторити визначення і виконати міні-перевірку на аналогічному прикладі."
+      "ai_explanation": "Analyst: error in the subject line 'Algorithms and Recursion'. The student chose 'Definiteness', whereas the correct answer is: 'Elementariness'. It is recommended that you review the definition and complete a short exercise using a similar example."
     },
     "architect": {
       "role": "Architect",
       "language": "uk",
-      "custom_prompt": "Привіт! Я вивчаю дискретну математику за Андерсоном і хочу розібрати свою помилку.\n\nПитання: Яка з властивостей алгоритму означає, що він повинен бути розбитий на прості кроки, зрозумілі виконавцю?\nМоя відповідь: Визначеність\nПравильна відповідь: Елементарність\n\nПоясни, будь ласка, простими словами, у чому моя помилка і як мислити правильно. Потім дай 2 короткі запитання для самоперевірки та 3 вправи: легка, середня, складна."
+      "custom_prompt": "Hi! I'm studying discrete mathematics using Anderson's textbook and want to figure out where I went wrong.\n\nQuestion: Which property of an algorithm means that it must be broken down into simple steps understandable to the executor?\nMy answer: Definiteness\nThe correct answer: Elementariness\n\nPlease explain in simple terms where I went wrong and how to think correctly.Then provide 2 short self-assessment questions and 3 exercises: easy, medium, and difficult."
     },
     "routing": {
       "notebook_url": "https://notebooklm.google.com/notebook/8c7b6a49-ea3a-43de-8049-5580346f1d3a",
-      "section": "Алгоритми, рекурсія, схема Горнера",
+      "section": "Algorithms, recursion, Horner's scheme",
       "keywords": [
-        "алгоритм",
-        "рекурсія",
-        "складність",
+        "algorithm",
+        "recursion",
+        "complexity",
         "big o",
-        "бінарний пошук",
-        "схема горнера",
-        "елементарність",
-        "властивості алгоритму"
+        "binary search",
+        "horner's scheme",
+        "elementariness",
+        "algorithm properties"
       ]
     },
     "grader": {
       "correct": false,
-      "score": 0.538,
+      "score": 0.462,
       "diff": [
-        "- Визначеність",
-        "+ Елементарність"
+        "- Definiteness",
+        "+ Elementariness"
       ],
       "summary": "Відповідь помилкова — спостерігається невірне розуміння або пропуск ключових моментів."
     },
     "feedback": {
-      "explanation": "Аналіз показує: Відповідь помилкова — спостерігається невірне розуміння або пропуск ключових моментів.\nІмовірний тип помилки: невірне розуміння ключових понять.\nДетально: порівняння відповіді студента і правильної відповіді (diff) нижче.\nDiff:\n- Визначеність\n+ Елементарність",
+      "explanation": "Аналіз показує: Відповідь помилкова — спостерігається невірне розуміння або пропуск ключових моментів.\nІмовірний тип помилки: невірне розуміння ключових понять.\nДетально: порівняння відповіді студента і правильної відповіді (diff) нижче.\nDiff:\n- Definiteness\n+ Elementariness",
       "recommendations": [
         "Уточнити визначення ключових термінів у питанні.",
         "Розбити задачу на кроки і перевірити проміжні висновки.",
@@ -191,15 +190,15 @@
       ],
       "links": [
         {
-          "title": "Оглядова стаття по темі: Алгоритми та рекурсія",
-          "url": "https://example.com/materials/Алгоритми%20та%20рекурсія"
+          "title": "Оглядова стаття по темі: Algorithms and Recursion",
+          "url": "https://example.com/materials/Algorithms%20and%20Recursion"
         },
         {
           "title": "NotebookLM (запустіть цей запит)",
           "url": "https://workspace.google.com/notebook-lm"
         }
       ],
-      "notebooklm_prompt": "You are a helpful tutor. A student submitted the following answer and it was evaluated against the correct answer.\nProvide a clear, step-by-step explanation of where the student went wrong, a concise conceptual correction, and a short practice plan (3 exercises) with increasing difficulty.\n\nCorrect answer:\nЕлементарність\n\nStudent answer:\nВизначеність\n\nAlso include suggested external readings or resources and recommend how the student should use them (e.g., which sections to read, what to practice)."
+      "notebooklm_prompt": "You are a helpful tutor. A student submitted the following answer and it was evaluated against the correct answer.\nProvide a clear, step-by-step explanation of where the student went wrong, a concise conceptual correction, and a short practice plan (3 exercises) with increasing difficulty.\n\nCorrect answer:\nElementariness\n\nStudent answer:\nDefiniteness\n\nAlso include suggested external readings or resources and recommend how the student should use them (e.g., which sections to read, what to practice)."
     },
     "policy_validation": {
       "ok": true,
@@ -209,8 +208,8 @@
   },
   {
     "question_id": "Q-016",
-    "question": "В алгоритмі множення матриць C = AB, де A має розмір m × p, а B — p × n, за якою формулою оновлюється значення елемента Cij у внутрішньому циклі по k?",
-    "topic": "Функції та матриці",
+    "question": "In the matrix multiplication algorithm C = AB, where A has size m × p and B has size p × n, which formula updates element Cij in the inner loop over k?",
+    "topic": "Functions and Matrices",
     "student_answer": "A",
     "correct_answer": "C",
     "student_answer_text": "Cij = Aik · Bkj",
@@ -220,23 +219,23 @@
     "analyst": {
       "role": "Analyst",
       "language": "uk",
-      "ai_explanation": "Аналітик (українською): помилка у темі 'Функції та матриці'. Студент обрав 'Cij = Aik · Bkj', тоді як правильна відповідь: 'Cij = Cij + Aki · Bjk'. Рекомендується повторити визначення і виконати міні-перевірку на аналогічному прикладі."
+      "ai_explanation": "Analyst: error in the subject line 'Functions and Matrices'. The student chose 'Cij = Aik · Bkj', whereas the correct answer is: 'Cij = Cij + Aki · Bjk'. It is recommended that you review the definition and complete a short exercise using a similar example."
     },
     "architect": {
       "role": "Architect",
       "language": "uk",
-      "custom_prompt": "Привіт! Я вивчаю дискретну математику за Андерсоном і хочу розібрати свою помилку.\n\nПитання: В алгоритмі множення матриць C = AB, де A має розмір m × p, а B — p × n, за якою формулою оновлюється значення елемента Cij у внутрішньому циклі по k?\nМоя відповідь: Cij = Aik · Bkj\nПравильна відповідь: Cij = Cij + Aki · Bjk\n\nПоясни, будь ласка, простими словами, у чому моя помилка і як мислити правильно. Потім дай 2 короткі запитання для самоперевірки та 3 вправи: легка, середня, складна."
+      "custom_prompt": "Hi! I'm studying discrete mathematics using Anderson's textbook and want to figure out where I went wrong.\n\nQuestion: In the matrix multiplication algorithm C = AB, where A has size m × p and B has size p × n, which formula updates element Cij in the inner loop over k?\nMy answer: Cij = Aik · Bkj\nThe correct answer: Cij = Cij + Aki · Bjk\n\nPlease explain in simple terms where I went wrong and how to think correctly.Then provide 2 short self-assessment questions and 3 exercises: easy, medium, and difficult."
     },
     "routing": {
       "notebook_url": "https://notebooklm.google.com/notebook/2952f7e1-f2ff-4700-be4d-fd18db30b79d",
-      "section": "Матриці, множення матриць, функції та відображення",
+      "section": "Matrices, matrix multiplication, functions and mappings",
       "keywords": [
-        "матриця",
-        "добуток матриць",
-        "функції",
-        "відображення",
-        "додавання матриць",
-        "множення матриць",
+        "matrix",
+        "matrix product",
+        "functions",
+        "mappings",
+        "matrix addition",
+        "matrix multiplication",
         "c = ab"
       ]
     },
@@ -258,8 +257,8 @@
       ],
       "links": [
         {
-          "title": "Оглядова стаття по темі: Функції та матриці",
-          "url": "https://example.com/materials/Функції%20та%20матриці"
+          "title": "Оглядова стаття по темі: Functions and Matrices",
+          "url": "https://example.com/materials/Functions%20and%20Matrices"
         },
         {
           "title": "NotebookLM (запустіть цей запит)",
@@ -276,49 +275,49 @@
   },
   {
     "question_id": "Q-019",
-    "question": "Яку властивість відношення включення описує твердження: (A ⊆ B, B ⊆ C) ⇒ (A ⊆ C)?",
-    "topic": "Теорія множин",
+    "question": "Which property of the subset relation is described by the statement: (A ⊆ B, B ⊆ C) ⇒ (A ⊆ C)?",
+    "topic": "Set Theory",
     "student_answer": "A",
     "correct_answer": "C",
-    "student_answer_text": "Ідемпотентність",
-    "correct_answer_text": "Симетричність",
+    "student_answer_text": "Idempotence",
+    "correct_answer_text": "Symmetry",
     "comment": "",
     "is_correct": false,
     "analyst": {
       "role": "Analyst",
       "language": "uk",
-      "ai_explanation": "Аналітик (українською): помилка у темі 'Теорія множин'. Студент обрав 'Ідемпотентність', тоді як правильна відповідь: 'Симетричність'. Рекомендується повторити визначення і виконати міні-перевірку на аналогічному прикладі."
+      "ai_explanation": "Analyst: error in the subject line 'Set Theory'. The student chose 'Idempotence', whereas the correct answer is: 'Symmetry'. It is recommended that you review the definition and complete a short exercise using a similar example."
     },
     "architect": {
       "role": "Architect",
       "language": "uk",
-      "custom_prompt": "Привіт! Я вивчаю дискретну математику за Андерсоном і хочу розібрати свою помилку.\n\nПитання: Яку властивість відношення включення описує твердження: (A ⊆ B, B ⊆ C) ⇒ (A ⊆ C)?\nМоя відповідь: Ідемпотентність\nПравильна відповідь: Симетричність\n\nПоясни, будь ласка, простими словами, у чому моя помилка і як мислити правильно. Потім дай 2 короткі запитання для самоперевірки та 3 вправи: легка, середня, складна."
+      "custom_prompt": "Hi! I'm studying discrete mathematics using Anderson's textbook and want to figure out where I went wrong.\n\nQuestion: Which property of the subset relation is described by the statement: (A ⊆ B, B ⊆ C) ⇒ (A ⊆ C)?\nMy answer: Idempotence\nThe correct answer: Symmetry\n\nPlease explain in simple terms where I went wrong and how to think correctly.Then provide 2 short self-assessment questions and 3 exercises: easy, medium, and difficult."
     },
     "routing": {
       "notebook_url": "https://notebooklm.google.com/notebook/fac9a29a-046b-4e5d-8028-877d0482bd83",
-      "section": "Множини, підмножини, відношення, раціональні числа",
+      "section": "Sets, subsets, relations, rational numbers",
       "keywords": [
-        "множини",
-        "підмножини",
-        "включення",
-        "відношення",
-        "раціональні числа",
-        "симетрична різниця",
-        "декартовий добуток",
-        "власна підмножина"
+        "sets",
+        "subsets",
+        "inclusion",
+        "relations",
+        "rational numbers",
+        "symmetric difference",
+        "cartesian product",
+        "proper subset"
       ]
     },
     "grader": {
       "correct": false,
-      "score": 0.5,
+      "score": 0.211,
       "diff": [
-        "- Ідемпотентність",
-        "+ Симетричність"
+        "- Idempotence",
+        "+ Symmetry"
       ],
       "summary": "Відповідь помилкова — спостерігається невірне розуміння або пропуск ключових моментів."
     },
     "feedback": {
-      "explanation": "Аналіз показує: Відповідь помилкова — спостерігається невірне розуміння або пропуск ключових моментів.\nІмовірний тип помилки: невірне розуміння ключових понять.\nДетально: порівняння відповіді студента і правильної відповіді (diff) нижче.\nDiff:\n- Ідемпотентність\n+ Симетричність",
+      "explanation": "Аналіз показує: Відповідь помилкова — спостерігається невірне розуміння або пропуск ключових моментів.\nІмовірний тип помилки: невірне розуміння ключових понять.\nДетально: порівняння відповіді студента і правильної відповіді (diff) нижче.\nDiff:\n- Idempotence\n+ Symmetry",
       "recommendations": [
         "Уточнити визначення ключових термінів у питанні.",
         "Розбити задачу на кроки і перевірити проміжні висновки.",
@@ -326,15 +325,15 @@
       ],
       "links": [
         {
-          "title": "Оглядова стаття по темі: Теорія множин",
-          "url": "https://example.com/materials/Теорія%20множин"
+          "title": "Оглядова стаття по темі: Set Theory",
+          "url": "https://example.com/materials/Set%20Theory"
         },
         {
           "title": "NotebookLM (запустіть цей запит)",
           "url": "https://workspace.google.com/notebook-lm"
         }
       ],
-      "notebooklm_prompt": "You are a helpful tutor. A student submitted the following answer and it was evaluated against the correct answer.\nProvide a clear, step-by-step explanation of where the student went wrong, a concise conceptual correction, and a short practice plan (3 exercises) with increasing difficulty.\n\nCorrect answer:\nСиметричність\n\nStudent answer:\nІдемпотентність\n\nAlso include suggested external readings or resources and recommend how the student should use them (e.g., which sections to read, what to practice)."
+      "notebooklm_prompt": "You are a helpful tutor. A student submitted the following answer and it was evaluated against the correct answer.\nProvide a clear, step-by-step explanation of where the student went wrong, a concise conceptual correction, and a short practice plan (3 exercises) with increasing difficulty.\n\nCorrect answer:\nSymmetry\n\nStudent answer:\nIdempotence\n\nAlso include suggested external readings or resources and recommend how the student should use them (e.g., which sections to read, what to practice)."
     },
     "policy_validation": {
       "ok": true,

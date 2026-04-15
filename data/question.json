@@ -1,199 +1,218 @@
 {
   "test": [
     {
-      "question": "Яке значення істинності має імплікація p → q, якщо припущення p є хибним (0), а висновок q — істинним (1)?",
+      "question": "What truth value does the implication p → q have if premise p is false (0) and conclusion q is true (1)?",
       "options": {
-        "A": "Істинно (1)",
-        "B": "Залежить від змісту p та q",
-        "C": "Хибно (0)",
-        "D": "Невизначено"
+        "A": "True (1)",
+        "B": "Depends on the meaning of p and q",
+        "C": "False (0)",
+        "D": "Undefined"
       },
       "student_answer": "A",
-      "correct_answer": "A"
+      "correct_answer": "A",
+      "topic": "Logic"
     },
     {
-      "question": "Згідно із законами де Моргана, заперечення диз'юнкції ~(p ∨ q) логічно еквівалентне:",
+      "question": "According to De Morgan's laws, the negation of the disjunction ~(p ∨ q) is logically equivalent to:",
       "options": {
         "A": "~p → ~q",
         "B": "~p ∨ ~q",
         "C": "~p ∧ ~q"
       },
       "student_answer": "C",
-      "correct_answer": "C"
+      "correct_answer": "C",
+      "topic": "Logic"
     },
     {
-      "question": "За якої умови диз'юнктивна нормальна форма (ДНФ) називається досконалою (ДДНФ)?",
+      "question": "Under what condition is a disjunctive normal form (DNF) called perfect (PDNF)?",
       "options": {
-        "A": "Вона містить мінімально можливу кількість диз'юнкцій",
-        "B": "Вона побудована лише за допомогою штриха Шефера",
-        "C": "Якщо висловлення є тавтологією"
+        "A": "It contains the minimum possible number of disjunctions",
+        "B": "It is built only using the Sheffer stroke",
+        "C": "If the statement is a tautology"
       },
       "student_answer": "A",
-      "correct_answer": "A"
+      "correct_answer": "A",
+      "topic": "Logic"
     },
     {
-      "question": "При спрощенні виразів за допомогою карти Карно, об'єднання чотирьох сусідніх клітин дозволяє виключити зі складової кон'юнкції:",
+      "question": "When simplifying expressions using a Karnaugh map, grouping four adjacent cells allows you to eliminate from the conjunction term:",
       "options": {
-        "A": "Три змінні",
-        "B": "Одну змінну",
-        "C": "Дві змінні"
+        "A": "Three variables",
+        "B": "One variable",
+        "C": "Two variables"
       },
       "student_answer": "B",
-      "correct_answer": "C"
+      "correct_answer": "C",
+      "topic": "Logic"
     },
     {
-      "question": "Яка з наведених властивостей є обов'язковою для того, щоб напівгрупа (S, *) вважалася моноїдом?",
+      "question": "Which of the following properties is required for a semigroup (S, *) to be considered a monoid?",
       "options": {
-        "A": "Наявність оберненого елемента для кожного елемента",
-        "B": "Наявність нейтрального елемента (одиниці) e",
-        "C": "Ідемпотентність усіх елементів множини"
+        "A": "Existence of an inverse element for every element",
+        "B": "Existence of a neutral element (identity) e",
+        "C": "Idempotence of all elements in the set"
       },
       "student_answer": "B",
-      "correct_answer": "B"
+      "correct_answer": "B",
+      "topic": "Algebraic Structures"
     },
     {
-      "question": "Згідно з критерієм підгрупи, за якої умови непорожня підмножина H групи (G, ·) є підгрупою?",
+      "question": "According to the subgroup criterion, under what condition is a non-empty subset H of group (G, ·) a subgroup?",
       "options": {
-        "A": "Для будь-яких h1, h2 ∈ H виконується h1 · h2⁻¹ ∈ H",
-        "B": "Операція в H повинна бути обов'язково комутативною",
-        "C": "Для будь-якого g ∈ G виконується gHg⁻¹ = H"
+        "A": "For any h1, h2 ∈ H, h1 · h2⁻¹ ∈ H holds",
+        "B": "The operation in H must necessarily be commutative",
+        "C": "For any g ∈ G, gHg⁻¹ = H holds"
       },
       "student_answer": "A",
-      "correct_answer": "A"
+      "correct_answer": "A",
+      "topic": "Algebraic Structures"
     },
     {
-      "question": "Якщо скінченна група G має порядок 12, який із наведених порядків МОЖЕ мати її підгрупа H згідно з теоремою Лагранжа?",
+      "question": "If a finite group G has order 12, which of the following orders CAN its subgroup H have according to Lagrange's theorem?",
       "options": {
         "A": "5",
         "B": "9",
         "C": "4"
       },
       "student_answer": "C",
-      "correct_answer": "C"
+      "correct_answer": "C",
+      "topic": "Algebraic Structures"
     },
     {
-      "question": "Яке поняття в теорії графів описує ситуацію, коли дві вершини з'єднані одним ребром?",
+      "question": "What concept in graph theory describes a situation where two vertices are connected by one edge?",
       "options": {
-        "A": "Кореляція",
-        "B": "Валентність",
-        "C": "Інцидентність"
+        "A": "Correlation",
+        "B": "Valency",
+        "C": "Incidence"
       },
       "student_answer": "A",
-      "correct_answer": "C"
+      "correct_answer": "C",
+      "topic": "Graphs and Trees"
     },
     {
-      "question": "Згідно з теоремою Ейлера, чому дорівнює сума степенів усіх вершин графа?",
+      "question": "According to Euler's theorem, what is the sum of the degrees of all vertices of a graph equal to?",
       "options": {
-        "A": "Квадрату кількості вершин (p²)",
-        "B": "Кількість ребер (q)",
-        "C": "Подвоєній кількості ребер (2q)"
+        "A": "The square of the number of vertices (p²)",
+        "B": "The number of edges (q)",
+        "C": "Twice the number of edges (2q)"
       },
       "student_answer": "C",
-      "correct_answer": "C"
+      "correct_answer": "C",
+      "topic": "Graphs and Trees"
     },
     {
-      "question": "Яка кількість вершин непарного степеня може бути у довільному графі?",
+      "question": "How many odd-degree vertices can an arbitrary graph have?",
       "options": {
-        "A": "Тільки парна",
-        "B": "Завжди нуль",
-        "C": "Тільки непарна"
+        "A": "Only an even number",
+        "B": "Always zero",
+        "C": "Only an odd number"
       },
       "student_answer": "A",
-      "correct_answer": "A"
+      "correct_answer": "A",
+      "topic": "Graphs and Trees"
     },
     {
-      "question": "Граф G називається двочастковим, якщо його множину вершин можна розбити на дві підмножини A і B так, що:",
+      "question": "A graph G is called bipartite if its vertex set can be split into two subsets A and B such that:",
       "options": {
-        "A": "Кожна вершина в A з'єднана з усіма іншими вершинами в A",
-        "B": "Граф обов'язково є повним",
-        "C": "Кількість вершин у A дорівнює кількості вершин у B"
+        "A": "Each vertex in A is connected to all other vertices in A",
+        "B": "The graph must be complete",
+        "C": "The number of vertices in A equals the number of vertices in B"
       },
       "student_answer": "A",
-      "correct_answer": "A"
+      "correct_answer": "A",
+      "topic": "Graphs and Trees"
     },
     {
-      "question": "Яка з властивостей алгоритму означає, що він повинен бути розбитий на прості кроки, зрозумілі виконавцю?",
+      "question": "Which property of an algorithm means that it must be broken down into simple steps understandable to the executor?",
       "options": {
-        "A": "Масовість",
-        "B": "Визначеність",
-        "C": "Елементарність"
+        "A": "Mass applicability",
+        "B": "Definiteness",
+        "C": "Elementariness"
       },
       "student_answer": "B",
-      "correct_answer": "C"
+      "correct_answer": "C",
+      "topic": "Algorithms and Recursion"
     },
     {
-      "question": "При обчисленні суми послідовності за алгоритмом S = S + pi, яке початкове значення зазвичай присвоюється змінній S?",
+      "question": "When computing the sum of a sequence using the algorithm S = S + pi, what initial value is usually assigned to variable S?",
       "options": {
         "A": "1",
         "B": "0",
         "C": "n"
       },
       "student_answer": "B",
-      "correct_answer": "B"
+      "correct_answer": "B",
+      "topic": "Algorithms and Recursion"
     },
     {
-      "question": "Для чого в алгоритмах використовується схема Горнера?",
+      "question": "What is Horner's scheme used for in algorithms?",
       "options": {
-        "A": "Для множення двох матриць",
-        "B": "Для сортування масивів",
-        "C": "Для пошуку коренів квадратного рівняння",
-        "D": "Для ефективного обчислення значення полінома"
+        "A": "To multiply two matrices",
+        "B": "To sort arrays",
+        "C": "To find the roots of a quadratic equation",
+        "D": "To efficiently compute the value of a polynomial"
       },
       "student_answer": "D",
-      "correct_answer": "D"
+      "correct_answer": "D",
+      "topic": "Algorithms and Recursion"
     },
     {
-      "question": "Яка умова є обов'язковою для виконання операції додавання двох матриць A та B?",
+      "question": "Which condition is required to perform the addition of two matrices A and B?",
       "options": {
-        "A": "Кількість стовпців A має дорівнювати кількості рядків B",
-        "B": "Одна з матриць повинна бути одиничною",
-        "C": "Матриці повинні бути квадратними"
+        "A": "The number of columns in A must equal the number of rows in B",
+        "B": "One of the matrices must be an identity matrix",
+        "C": "The matrices must be square"
       },
       "student_answer": "C",
-      "correct_answer": "C"
+      "correct_answer": "C",
+      "topic": "Functions and Matrices"
     },
     {
-      "question": "В алгоритмі множення матриць C = AB, де A має розмір m × p, а B — p × n, за якою формулою оновлюється значення елемента Cij у внутрішньому циклі по k?",
+      "question": "In the matrix multiplication algorithm C = AB, where A has size m × p and B has size p × n, which formula updates element Cij in the inner loop over k?",
       "options": {
         "A": "Cij = Aik · Bkj",
         "B": "Cij = Aij + Bij",
         "C": "Cij = Cij + Aki · Bjk"
       },
       "student_answer": "A",
-      "correct_answer": "C"
+      "correct_answer": "C",
+      "topic": "Functions and Matrices"
     },
     {
-      "question": "Яка з наведених стандартних числових множин описує множину всіх раціональних чисел?",
+      "question": "Which of the following standard number sets describes the set of all rational numbers?",
       "options": {
         "A": "N = {1, 2, 3, ...}",
-        "B": "R = {всі десяткові дроби}",
+        "B": "R = {all decimal fractions}",
         "C": "Z = {0, ±1, ±2, ...}"
       },
       "student_answer": "B",
-      "correct_answer": "B"
+      "correct_answer": "B",
+      "topic": "Set Theory"
     },
     {
-      "question": "Коли множина A називається власною підмножиною множини B (A ⊂ B)?",
+      "question": "When is set A called a proper subset of set B (A ⊂ B)?",
       "options": {
-        "A": "Коли B є порожньою множиною ∅",
-        "B": "Коли A ⊆ B і A ≠ B",
-        "C": "Коли A та B мають однакову кількість елементів"
+        "A": "When B is the empty set ∅",
+        "B": "When A ⊆ B and A ≠ B",
+        "C": "When A and B have the same number of elements"
       },
       "student_answer": "B",
-      "correct_answer": "B"
+      "correct_answer": "B",
+      "topic": "Set Theory"
     },
     {
-      "question": "Яку властивість відношення включення описує твердження: (A ⊆ B, B ⊆ C) ⇒ (A ⊆ C)?",
+      "question": "Which property of the subset relation is described by the statement: (A ⊆ B, B ⊆ C) ⇒ (A ⊆ C)?",
       "options": {
-        "A": "Ідемпотентність",
-        "B": "Рефлексивність",
-        "C": "Симетричність"
+        "A": "Idempotence",
+        "B": "Reflexivity",
+        "C": "Symmetry"
       },
       "student_answer": "A",
-      "correct_answer": "C"
+      "correct_answer": "C",
+      "topic": "Set Theory"
     },
     {
-      "question": "Що таке симетрична різниця множин A Δ B?",
+      "question": "What is the symmetric difference of sets A Δ B?",
       "options": {
         "A": "A Δ B = (A \\ B) ∪ (B \\ A)",
         "B": "A Δ B = (A ∪ B) ∩ (A ∩ B)",
@@ -201,17 +220,19 @@
         "D": "A Δ B = A ∪ B"
       },
       "student_answer": "A",
-      "correct_answer": "A"
+      "correct_answer": "A",
+      "topic": "Set Theory"
     },
     {
-      "question": "Виберіть правильне твердження щодо декартового добутку множин X = {1,2} та Y = {0,1}.",
+      "question": "Choose the correct statement about the Cartesian product of sets X = {1,2} and Y = {0,1}.",
       "options": {
         "A": "X × Y = {1,2,0,1}",
         "B": "X × Y = Y × X",
         "C": "|X × Y| = 2 + 2 = 4"
       },
       "student_answer": "C",
-      "correct_answer": "C"
+      "correct_answer": "C",
+      "topic": "Set Theory"
     }
   ]
 }

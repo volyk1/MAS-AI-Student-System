@@ -1,97 +1,96 @@
 {
-  "Логіка": {
+  "Logic": {
     "url": "https://notebooklm.google.com/notebook/1652e15b-2235-4a56-b934-60a4a0c77396",
     "notebooklm_workbook": "https://notebooklm.google.com/notebook/1652e15b-2235-4a56-b934-60a4a0c77396",
-    "section": "Таблиці істинності, імплікація, закони де Моргана, ДНФ, тавтології",
+    "section": "Truth tables, implication, De Morgan's laws, DNF, tautologies",
     "keywords": [
-      "таблиці істинності",
-      "імплікація",
-      "де моргана",
-      "днф",
-      "карти карно",
-      "логіка",
-      "тавтологія",
-      "карта карно",
-      "дднф",
-      "істинність"
+      "truth tables",
+      "implication",
+      "de morgan's",
+      "dnf",
+      "karnaugh maps",
+      "logic",
+      "tautologies",
+      "pdnf",
+      "truth"
     ]
   },
-  "Алгебраїчні структури": {
+  "Algebraic Structures": {
     "url": "https://notebooklm.google.com/notebook/c0c343b1-5532-43b5-9235-8bbe921be8d6",
     "notebooklm_workbook": "https://notebooklm.google.com/notebook/c0c343b1-5532-43b5-9235-8bbe921be8d6",
-    "section": "Бінарні операції, групи, кільця, поля",
+    "section": "Binary operations, groups, rings, fields",
     "keywords": [
-      "бінарні операції",
-      "структури",
-      "групи",
-      "кільця",
-      "поля",
-      "напівгрупа",
-      "моноїд",
-      "підгрупа",
-      "лагранжа",
-      "порядок групи"
+      "binary operations",
+      "structures",
+      "groups",
+      "rings",
+      "fields",
+      "semigroup",
+      "monoid",
+      "subgroup",
+      "lagrange",
+      "group order"
     ]
   },
-  "Теорія множин": {
+  "Set Theory": {
     "url": "https://notebooklm.google.com/notebook/fac9a29a-046b-4e5d-8028-877d0482bd83",
     "notebooklm_workbook": "https://notebooklm.google.com/notebook/fac9a29a-046b-4e5d-8028-877d0482bd83",
-    "section": "Множини, підмножини, відношення, раціональні числа",
+    "section": "Sets, subsets, relations, rational numbers",
     "keywords": [
-      "множини",
-      "підмножини",
-      "включення",
-      "відношення",
-      "раціональні числа",
-      "симетрична різниця",
-      "декартовий добуток",
-      "власна підмножина"
+      "sets",
+      "subsets",
+      "inclusion",
+      "relations",
+      "rational numbers",
+      "symmetric difference",
+      "cartesian product",
+      "proper subset"
     ]
   },
-  "Функції та матриці": {
+  "Functions and Matrices": {
     "url": "https://notebooklm.google.com/notebook/2952f7e1-f2ff-4700-be4d-fd18db30b79d",
     "notebooklm_workbook": "https://notebooklm.google.com/notebook/2952f7e1-f2ff-4700-be4d-fd18db30b79d",
-    "section": "Матриці, множення матриць, функції та відображення",
+    "section": "Matrices, matrix multiplication, functions and mappings",
     "keywords": [
-      "матриця",
-      "добуток матриць",
-      "функції",
-      "відображення",
-      "додавання матриць",
-      "множення матриць",
+      "matrix",
+      "matrix product",
+      "functions",
+      "mappings",
+      "matrix addition",
+      "matrix multiplication",
       "c = ab"
     ]
   },
-  "Алгоритми та рекурсія": {
+  "Algorithms and Recursion": {
     "url": "https://notebooklm.google.com/notebook/8c7b6a49-ea3a-43de-8049-5580346f1d3a",
     "notebooklm_workbook": "https://notebooklm.google.com/notebook/8c7b6a49-ea3a-43de-8049-5580346f1d3a",
-    "section": "Алгоритми, рекурсія, схема Горнера",
+    "section": "Algorithms, recursion, Horner's scheme",
     "keywords": [
-      "алгоритм",
-      "рекурсія",
-      "складність",
+      "algorithm",
+      "recursion",
+      "complexity",
       "big o",
-      "бінарний пошук",
-      "схема горнера",
-      "елементарність",
-      "властивості алгоритму"
+      "binary search",
+      "horner's scheme",
+      "elementariness",
+      "algorithm properties"
     ]
   },
-  "Графи та дерева": {
+  "Graphs and Trees": {
     "url": "https://notebooklm.google.com/notebook/b97eab68-8b20-4803-85fd-0907afc2f21f",
     "notebooklm_workbook": "https://notebooklm.google.com/notebook/b97eab68-8b20-4803-85fd-0907afc2f21f",
-    "section": "Степені вершин, шляхи, дерева, Ейлерові графи",
+    "section": "Vertex degrees, paths, trees, Eulerian graphs",
     "keywords": [
-      "графи",
-      "дерева",
-      "вершини",
-      "ребра",
-      "шляхи",
-      "інцидентність",
-      "степінь вершини",
-      "двочастковий",
-      "теорема ейлера",
-      "ейлерові графи"
+      "graphs",
+      "trees",
+      "vertices",
+      "edges",
+      "paths",
+      "incidence",
+      "vertex degree",
+      "bipartite",
+      "euler theorem",
+      "eulerian graphs"
     ]
   }
 }

@@ -20,43 +20,47 @@ def _normalize(text: str) -> str:
 def _detect_topic(question_text: str) -> str:
     q = _normalize(question_text)
 
-    if any(k in q for k in ["імплікац", "де морган", "днф", "карно", "тавтолог", "істинност"]):
-        return "Логіка"
-    if any(k in q for k in ["моноїд", "напівгруп", "підгруп", "лагранж", "груп", "бінарн", "кільц", "поле"]):
-        return "Алгебраїчні структури"
-    if any(k in q for k in ["множин", "підмножин", "включенн", "раціональ", "декартов", "симетричн", "відношенн"]):
-        return "Теорія множин"
-    if any(k in q for k in ["матриц", "c = ab", "додаван", "множенн", "відображенн", "функц"]):
-        return "Функції та матриці"
-    if any(k in q for k in ["алгоритм", "горнер", "рекурс", "big o", "бінарн"]):
-        return "Алгоритми та рекурсія"
-    if any(k in q for k in ["граф", "вершин", "ребер", "ейлер", "двочастков", "інцидент", "дерев"]):
-        return "Графи та дерева"
+    if any(k in q for k in ["implication", "de morgan's", "dnf", "karnaugh maps", "tautologies", "truth"]):
+        return "Logic"
+    if any(k in q for k in ["monoid", "subgroups", "Lagrange", "groups", "binary", "rings", "field"]):
+        return "Algebraic structures"
+    if any(k in q for k in ["sets", "subsets", "inclusion", "rational", "Cartesian", "symmetrical", "relationship"]):
+        return "Set Theory"
+    if any(k in q for k in ["matrices", "c = ab", "added", "multiplication", "reflection", "function"]):
+        return "Functions and Matrices"
+    if any(k in q for k in ["algorithm", "Gorner", "recursion", "big o", "binary"]):
+        return "Algorithms and Recursion"
+    if any(k in q for k in ["count", "peaks", "ribs", "Euler", "two-part", "incident", "trees"]):
+        return "Graphs and Trees"
 
-    return "Логіка"
+    return "Logic"
 
 
 def _build_session(question_items: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     session = []
 
     for idx, item in enumerate(question_items):
+        question_id = f"Q-{idx + 1:03d}"
         question_text = str(item.get("question", "")).strip()
         options = item.get("options", {}) if isinstance(item.get("options"), dict) else {}
         student_answer = str(item.get("student_answer", "")).strip()
         correct_answer = str(item.get("correct_answer", "")).strip()
         comment = str(item.get("comment", "")).strip()
         is_correct = student_answer == correct_answer
+        provided_topic = str(item.get("topic", "")).strip()
+        # Always prefer topic from question.json; detect only as fallback.
+        stable_topic = provided_topic or _detect_topic(question_text)
 
         session.append(
             {
-                "question_id": f"Q-{idx + 1:03d}",
+                "question_id": question_id,
                 "question": question_text,
                 "options": options,
                 "correct_answer": correct_answer,
                 "student_answer": student_answer,
                 "is_correct": is_correct,
                 "comment": comment,
-                "topic": _detect_topic(question_text),
+                "topic": stable_topic,
             }
         )
 
